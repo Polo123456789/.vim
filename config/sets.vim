@@ -25,6 +25,11 @@ set background=dark
 set textwidth=80
 set lazyredraw
 
+set undofile
+set undodir=~/.vim/undo
+set undolevels=500
+set undoreload=10000
+
 set shiftwidth=4
 set softtabstop=4
 set expandtab
