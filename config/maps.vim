@@ -30,6 +30,7 @@ noremap <C-j> <Esc>/<++><CR><Esc>"_cf>
 
 " Shortcuts
 nnoremap <leader>bd :bd<CR>
+nnoremap <leader>bt :e ~/temp.md<CR>
 nnoremap <leader><tab> :bn<CR>
 nnoremap <leader>Rg :%s//g<left><left>
 nnoremap <leader>Rw *N:%s///g<left><left>
