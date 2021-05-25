@@ -39,8 +39,8 @@ set nohlsearch
 
 set conceallevel=0
 
-" set exrc
-" set secure
+"set exrc
+"set secure
 
 " Para usar el tema en la terminal
 if (has("termguicolors"))

@@ -5,6 +5,7 @@ call plug#begin()
 "Plug 'vim-airline/vim-airline-themes'
 if has('nvim')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 else
 "   Plug 'lifepillar/vim-mucomplete'
 endif
