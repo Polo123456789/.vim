@@ -83,6 +83,7 @@ inoremap [<CR> [<CR><CR>]<Esc>k"_cc
 inoremap [<leader> [
 
 inoremap "" ""
+inoremap '' ''
 inoremap () ()
 inoremap {} {}
 inoremap [] []

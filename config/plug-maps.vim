@@ -23,7 +23,8 @@ nnoremap <leader>ft :Filetypes<CR>
 
 " Fugitive
 nnoremap <leader>gs :G<CR>
-nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gc :Git commit<CR>
+nnoremap <leader>gp :Git push<CR>
 
 " Goyo
 nnoremap <leader>Go :Goyo 85<CR>

@@ -5,6 +5,8 @@ function! MarkdownMaps()
     nnoremap <leader>mh2 "zY"zpVr-
     inoremap <localleader>1 <Esc>"zY"zpVr=o<C-j>
     inoremap <localleader>2 <Esc>"zY"zpVr-o<C-j>
+    "nnoremap <leader>mh0 "zY"zpVr="zyyk"zP
+    inoremap <localleader><leader> <localleader>
 
     " Para crear una archivo de un link
     nnoremap <localleader>cf "zyi(:e %:h/<c-r>z<cr>
@@ -16,7 +18,6 @@ function! MarkdownMaps()
     inoremap <localleader>ui <c-j>*<Space>
     nnoremap <localleader>ui o*<Space>
     inoremap <localleader>cs <Esc>gqgqI> <Esc>A
-    nnoremap <C-.> vipJ$dT.xgqgq<Space>
 endfunction
 autocmd BufRead,BufNewFile *.md call MarkdownMaps()
 command MarkMode call MarkdownMaps()

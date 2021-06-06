@@ -3,6 +3,7 @@ call plug#begin()
 "Plug 'vim-scripts/taglist.vim'
 "Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
+"Plug 'mattn/emmet-vim'
 if has('nvim')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
@@ -26,6 +27,5 @@ Plug 'mbbill/undotree'
 Plug 'Polo123456789/vim-wombat-scheme'
 Plug 'Yggdroot/indentLine'
 Plug 'mhinz/vim-startify'
-Plug 'mattn/emmet-vim'
 
 call plug#end()
