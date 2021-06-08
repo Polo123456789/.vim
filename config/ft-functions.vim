@@ -5,11 +5,7 @@ function s:setEncodingUTF()
 endfunction
 autocmd BufRead,BufNewFile *.org call s:setEncodingUTF()
 
-" Apagamos el spell de pandoc
-function s:sinSpell()
-    set spell!
-endfunction
-autocmd BufRead,BufNewFile *.md call s:sinSpell()
+autocmd FileType pandoc,rst setlocal nospell
 
 " De header a cpp
 "function s:implToH()
@@ -21,6 +17,7 @@ autocmd BufRead,BufNewFile *.md call s:sinSpell()
 function! UseSystemClipboard()
     setlocal clipboard+=unnamed
 endfunction
+call UseSystemClipboard()
 command SystemClip call UseSystemClipboard()
 
 " Porque los tsx no los toma correctamente
