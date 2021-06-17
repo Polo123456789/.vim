@@ -5,8 +5,6 @@ function s:setEncodingUTF()
 endfunction
 autocmd BufRead,BufNewFile *.org call s:setEncodingUTF()
 
-autocmd FileType pandoc,rst setlocal nospell
-
 " De header a cpp
 "function s:implToH()
 "    nnoremap <leader>ti :e<Space>%<.cpp<CR>
@@ -27,6 +25,14 @@ function s:UseTypescript()
     set textwidth=0
 endfunction
 autocmd BufRead,BufNewFile *.tsx call s:UseTypescript()
+
+function! RstMaps()
+    "Creacion de Headers
+    inoremap <localleader>3 <Esc>"zY"zpVr~o<C-j>
+    inoremap <localleader>4 <Esc>"zY"zpVr^o<C-j>
+    inoremap <localleader>5 <Esc>"zY"zpVr'o<C-j>
+endfunction
+autocmd BufRead,BufNewFile *.rst call RstMaps()
 
 " Autocompletar tags en html
 " function s:CompleteTags()

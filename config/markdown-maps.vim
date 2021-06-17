@@ -1,11 +1,11 @@
 function! MarkdownMaps()
     "Creacion de Headers
     nnoremap <localleader>nc :set conceallevel=0<CR>
+    nnoremap <leader>mh0 "zY"zpVr="zyyk"zP
     nnoremap <leader>mh1 "zY"zpVr=
     nnoremap <leader>mh2 "zY"zpVr-
     inoremap <localleader>1 <Esc>"zY"zpVr=o<C-j>
     inoremap <localleader>2 <Esc>"zY"zpVr-o<C-j>
-    nnoremap <leader>mh0 "zY"zpVr="zyyk"zP
     inoremap <localleader><leader> <localleader>
 
     " Para crear una archivo de un link

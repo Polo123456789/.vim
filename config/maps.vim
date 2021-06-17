@@ -39,6 +39,9 @@ nnoremap <leader>hs :set hlsearch!<CR>
 inoremap <c-k> <Esc>gqgqA
 nnoremap <c-k> gqgqA
 
+" Windows
+nnoremap <C-w>v <C-w>v<C-w>L
+
 " Tabs
 nnoremap <leader>tn :tabnew 
 nnoremap <leader>tl :tabn<CR>
@@ -90,3 +93,14 @@ inoremap [] []
 
 " Cheatsheet
 nnoremap <leader>cs :tabnew<CR>:term curl cht.sh/
+
+augroup Binary
+  au!
+  au BufReadPre   *.bin let &bin=1
+  au BufReadPost  *.bin if &bin | %!xxd
+  au BufReadPost  *.bin set ft=xxd | endif
+  au BufWritePre  *.bin if &bin | %!xxd -r
+  au BufWritePre  *.bin endif
+  au BufWritePost *.bin if &bin | %!xxd
+  au BufWritePost *.bin set nomod | endif
+augroup END

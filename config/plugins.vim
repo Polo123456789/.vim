@@ -27,5 +27,6 @@ Plug 'mbbill/undotree'
 Plug 'Polo123456789/vim-wombat-scheme'
 Plug 'Yggdroot/indentLine'
 Plug 'mhinz/vim-startify'
+Plug 'Jorengarenar/miniSnip'
 
 call plug#end()

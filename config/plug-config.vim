@@ -53,3 +53,12 @@ let g:netrw_winsize = 25
 
 " Vimwiki
 let g:vimwiki_global_ext = 0
+
+" Mini Snip
+let g:miniSnip_trigger = "<A-m>"
+let g:miniSnip_extends = {
+            \ "cpp" : [ "objc", "c" ],
+            \ "javascript" : [ "typescript" ],
+            \ }
+
+let g:pandoc#spell#enabled = 0

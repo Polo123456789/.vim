@@ -47,3 +47,7 @@ if (has("termguicolors"))
     set termguicolors
     colorscheme wombat
 endif
+
+"if (has("win32"))
+"    set shell=powershell.exe
+"endif
