@@ -6,7 +6,7 @@ nnoremap <leader>ee :NERDTreeToggle<CR>
 
 " Tagbar
 nnoremap <leader>Ts :TagbarToggle<CR>
-"nnoremap <leader>Tc :!ctags --c-kinds=+p -R .<CR>
+nnoremap <leader>Tc :!ctags --c-kinds=+p -R .<CR>
 
 " Undotree
 nnoremap <leader>ut :UndotreeToggle<CR>

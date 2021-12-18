@@ -94,6 +94,11 @@ inoremap [] []
 " Cheatsheet
 nnoremap <leader>cs :tabnew<CR>:term curl cht.sh/
 
+" Remap rapido
+" No puede tener <leader> como un literal, asi que esta es la forma que se me
+" ocurrio para arreglarlo
+nnoremap <leader>gg :nnoremap <leader<Space><Left>>gg<Right>
+
 augroup Binary
   au!
   au BufReadPre   *.bin let &bin=1

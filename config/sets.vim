@@ -38,6 +38,7 @@ set incsearch
 set nohlsearch
 
 set conceallevel=0
+"set cursorline
 
 "set exrc
 "set secure

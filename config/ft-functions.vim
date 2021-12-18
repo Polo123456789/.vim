@@ -1,3 +1,5 @@
+autocmd FileType html,tsx,jsx set colorcolumn=120 textwidth=0
+
 " UTF para .org
 function s:setEncodingUTF()
     set fileencoding=utf8
