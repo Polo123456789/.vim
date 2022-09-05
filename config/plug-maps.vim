@@ -23,9 +23,14 @@ nnoremap <leader>ft :Filetypes<CR>
 
 " Fugitive
 nnoremap <leader>gs :G<CR>
-nnoremap <leader>gc :Git commit<CR>
+nnoremap <leader>gc :Git commit -s<CR>
 nnoremap <leader>gp :Git push<CR>
+nnoremap <leader>gl :Git whatchanged<CR>
+
 
 " Goyo
 nnoremap <leader>Go :Goyo 85<CR>
 nnoremap <leader>Gc :Goyo<CR>
+
+" Repeat
+nnoremap <silent> zG zG:silent! call repeat#set("zG", v:count)<CR>
