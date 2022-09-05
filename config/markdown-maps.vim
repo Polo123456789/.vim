@@ -18,6 +18,12 @@ function! MarkdownMaps()
     inoremap <localleader>ui <c-j>*<Space>
     nnoremap <localleader>ui o*<Space>
     inoremap <localleader>cs <Esc>gqgqI> <Esc>A
+
+    set makeprg=pandoc\ %\ -o\ %<.pdf
 endfunction
-autocmd BufRead,BufNewFile *.md,*.rst call MarkdownMaps()
 command MarkMode call MarkdownMaps()
+
+augroup filetypeMarkdown
+    autocmd!
+    autocmd BufRead,BufNewFile *.md,*.rst call MarkdownMaps()
+augroup END
