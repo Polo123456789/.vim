@@ -26,7 +26,8 @@ vnoremap <C-l> zz
 nnoremap <silent> <leader>nb :set relativenumber!<CR>
 
 " Placeholders
-noremap <C-j> <Esc>/<++><CR><Esc>"_cf>
+nnoremap <C-j> <Esc>/<++><CR><Esc>"_cf>
+inoremap <C-J> <Esc>/<++><CR><Esc>"_cf>
 
 " Shortcuts
 nnoremap <leader>bd :bd<CR>
