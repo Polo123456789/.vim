@@ -29,7 +29,7 @@ nnoremap <leader>gl :Git whatchanged<CR>
 
 
 " Goyo
-nnoremap <leader>Go :Goyo 85<CR>
+nnoremap <leader>Go :Goyo 50%<CR>
 nnoremap <leader>Gc :Goyo<CR>
 
 " Repeat

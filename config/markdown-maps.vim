@@ -19,7 +19,13 @@ function! MarkdownMaps()
     nnoremap <localleader>ui o*<Space>
     inoremap <localleader>cs <Esc>gqgqI> <Esc>A
 
-    set makeprg=pandoc\ %\ -o\ %<.pdf
+    if filereadable('metadata.json')
+        echom "Found metadata.json, including it in makeprg"
+        setlocal makeprg=pandoc\ %\ -o\ %<.pdf\ --metadata-file\ metadata.json
+    else
+        echom "No metadata.json file found, using only pandoc in makeprg"
+        setlocal makeprg=pandoc\ %\ -o\ %<.pdf
+    endif
 endfunction
 command MarkMode call MarkdownMaps()
 
