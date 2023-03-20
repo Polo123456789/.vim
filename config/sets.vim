@@ -1,3 +1,5 @@
+set ff=unix
+
 filetype indent plugin on
 syntax on
 set nobackup
