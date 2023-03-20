@@ -2,6 +2,7 @@ set ff=unix
 
 filetype indent plugin on
 syntax on
+set clipboard=unnamedplus
 set nobackup
 set fileencoding=utf8
 set encoding=utf-8
