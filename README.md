@@ -1,3 +1,7 @@
+# Nota
+
+Reemplazado por <https://github.com/Polo123456789/dotfiles>
+
 Configuracion de vim
 ====================
 
